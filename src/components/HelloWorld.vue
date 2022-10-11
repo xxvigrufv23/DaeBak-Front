@@ -35,6 +35,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data() { 
+    return {
+      // hisname: 'jaeyoun.choi is best '
+    }
   }
 }
 </script>
