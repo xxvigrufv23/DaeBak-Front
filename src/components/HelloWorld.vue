@@ -19,7 +19,7 @@
       <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
-    <h3>Ecosystem</h3>
+    <h3>Ecosystem commit test</h3>
   </div>
 </template>
 
