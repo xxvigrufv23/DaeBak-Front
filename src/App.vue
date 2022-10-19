@@ -1,30 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <header>
+    <Navbar :menuitems = "menuitems"/>
+
+
+   </header>
   </div>
-  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from './components/Navbar';
 
 export default {
   name: 'App',
+  data(){
+    return {
+      menuitems:["브랜드소개","매장 위치","갤러리","고객의 소리","공지사항"],
+
+    }
+  },
   components: {
-    HelloWorld
+    Navbar
+    
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
+* {
+  margin-top: 15px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+
+}
+header{
+  width: 100%;
+  background-color:#fff1bf;
+  padding:0px;
+}
 </style>
