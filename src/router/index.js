@@ -8,8 +8,12 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
+    redirect: '/mainpage'
+  },
+  {
+    path:'/mainpage',
+    component: MainPage,
     name: 'mainpage',
-    component: MainPage
   },
   {
     path: '/about',
