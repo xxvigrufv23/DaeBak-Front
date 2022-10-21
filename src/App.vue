@@ -16,8 +16,11 @@ import Navbar from './components/frame/Navbar.vue';
 
 export default {
     name: "App",
-    data: () => ({
-    }),
+    data() { 
+      return { 
+
+      }
+    },
     components: { 
       TopMenuBar, 
       Footer,
