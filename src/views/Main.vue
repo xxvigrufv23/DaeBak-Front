@@ -1,7 +1,9 @@
 <template> 
-  <v-container>
-    <div class="background_img">sdg</div>
-  </v-container>
+  <v-main>
+    <v-container>
+      <div class="background_img"></div>
+    </v-container>
+  </v-main>
 </template>
 
 <script>
@@ -17,7 +19,7 @@ export default {
 .background_img { 
   background-image: url('@/assets/img/img_main_background_1.png');
   width : 1334x;
-  height: 880px;
+  height: 1200px;
 }
 
 </style>

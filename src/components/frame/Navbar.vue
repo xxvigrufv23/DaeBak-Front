@@ -1,24 +1,64 @@
 <template>
-  <nav style="margin-left: 50px;">
-    <div class ="menu-title">大舶정육점</div>
-    <div class="menu-item">메뉴</div>
-    <div class="menu-item">브랜드 소개</div>
-    <div class="menu-item">매장 위치</div>
-    <div class="menu-item">갤러리</div>
-    <div class="menu-item">고객의 소리</div>
-    <div class="menu-item">공지사항</div>
-  </nav>
-</template>
+    <nav>
+      <div 
+        class ="menu-title"
+        @click="gotoMainPage"
+        style="cursor: pointer;"
+      >{{ title }}
+      </div>
+      <v-layout class="px-3">
+        <v-btn 
+          class="px-3 cols=3 "
+            >{{ brandInfo }}
+        </v-btn>
 
-<script>
-export default {
-    name: 'navbar',
-}
-</script>
+        <v-btn 
+            >{{ storeInfo }}
+        </v-btn>
+        
+        <v-btn 
+            >{{ gallery }}
+        </v-btn>
+
+        <v-btn 
+        >{{ customer }}
+        </v-btn>
+
+        <v-btn 
+            >{{ information }}
+        </v-btn>
+        </v-layout>
+
+    </nav>
+  </template>
+  
+  <script>
+  export default {
+      name: 'navbar',
+      data() { 
+          return { 
+              title: '大舶정육점',
+              brandInfo: '브랜드 소개',
+              storeInfo: '매장',
+              gallery: '갤러리',
+              customer: '고객의 소리',
+              information: '공지사항',
+
+          }
+      },
+      methods: { 
+        gotoMainPage() {
+            this.$router.push('mainpage');
+        }
+      }
+  }
+  </script>
 
 <style>
 @import url("@/assets/fonts/font.css");
 .menu-title{
+    width:300px;
+    text-align: center;
     font-size: 35px;
     font-family: 'ulsanjunggu';
     background-color: bisque;
