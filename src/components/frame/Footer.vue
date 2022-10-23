@@ -1,38 +1,45 @@
 <template>
   <v-footer
+  style="width:100%"
   dark
   padless>
-    <v-card
-    flat
-    tile
-    class="indigo lighten-1 white--text text-center">
-      <v-card-text class="white--text pt-0">
-        Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui. Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada. Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin. Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      </v-card-text>
-
-      <v-divider></v-divider>
-
-      <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-card-text>
-    </v-card>
+    
+    <v-layout>
+      <div class="logo_img"></div>
+      <v-card
+      style="width:100%; float:right;"
+      class=" lighten-1 white--text">
+        <h5>{{ companyName }}</h5>
+        <v-card-text class="white--text pt-0" v-html="companyAddress"></v-card-text>
+        <v-divider></v-divider>
+      </v-card>
+      <v-card
+      style="width:100%; float:right;"
+      class=" lighten-1 white--text text-center">
+      <div class="logo_img"></div>
+        <h5>{{ companyName }}</h5>
+        <v-card-text class="white--text pt-0" v-html="companyAddress"></v-card-text>
+        <v-divider></v-divider>
+      </v-card>
+    </v-layout>
   </v-footer>
 </template>
 
 <script>
 export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-
+  name: 'Footer',
+  data() { 
+    return { 
+      companyName: '(주) 케이푸드노량',
+      companyAddress: '대전 서구 동서대로973번길 131 1층 (내동 163-3)'
+    }
+  }
 }
 </script>
 
-<style>
+<style scoped="scss"> 
+.logo_img { 
+  background-image: url('@/assets/img/img_main_logo.png');
+}
 
 </style>

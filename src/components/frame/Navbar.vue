@@ -37,7 +37,7 @@
       name: 'navbar',
       data() { 
           return { 
-              title: '大舶정육점',
+              title: '케이푸드(노량)',
               brandInfo: '브랜드 소개',
               storeInfo: '매장',
               gallery: '갤러리',
