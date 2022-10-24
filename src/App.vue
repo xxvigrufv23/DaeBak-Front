@@ -1,47 +1,30 @@
 <template>
-  <div id="app">
-   <header>
-    <Navbar :menuitems = "menuitems"/>
-
-
-   </header>
-   <router-view></router-view>
-  </div>
-  
+  <v-app>
+    <v-main>
+      <TopMenuBar />
+      <Navbar  style="background-color: brown;" />
+      <router-view/>
+      <Footer class="footer"/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import Navbar from './components/Navbar';
-
+import TopMenuBar from './components/frame/TopMenuBar.vue';
+import Footer from './components/frame/Footer.vue';
+import Navbar from './components/frame/Navbar.vue';
 export default {
-  name: 'App',
-  data(){
-    return {
-      menuitems:["브랜드소개","매장 위치","갤러리","고객의 소리","공지사항"],
-
+    name: "App",
+    data() { 
+      return { 
+      }
+    },
+    components: { 
+      TopMenuBar, 
+      Footer,
+      Navbar
     }
-  },
-  components: {
-    Navbar
-    
-  }
-}
+};
 </script>
-
-<style>
-
-* {
-  margin-top: 15px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'montserrat', sans-serif;
-
-}
-header{
-  width: 100%;
-  background-color:#fff1bf;
-  padding:0px;
-}
+<style scoped="scss">
 </style>
