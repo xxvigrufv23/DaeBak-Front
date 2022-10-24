@@ -1,16 +1,22 @@
-<template>
-  <div class="mainPage">this is Main Page</div>
+<template> 
+  <div style="height: 100%;">
+    <div class="background_img"></div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'MainPage',
+  name: "MainPage",
+  components: { 
+      Navbar: () => import('@/components/frame/Navbar.vue'),
+  }
 }
 </script>
 
 <style>
-.mainPage { 
-  background-color: aqua;
+.background_img { 
+background-image: url('@/assets/img/img_main_background_1.png');
+background-size: cover;
+height:100%;
 }
-
 </style>
