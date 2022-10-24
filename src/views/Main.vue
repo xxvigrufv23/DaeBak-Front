@@ -1,9 +1,7 @@
 <template> 
-  <v-main>
-    <v-container>
+    <div style="height: 100%;">
       <div class="background_img"></div>
-    </v-container>
-  </v-main>
+    </div>
 </template>
 
 <script>
@@ -18,8 +16,8 @@ export default {
 <style>
 .background_img { 
   background-image: url('@/assets/img/img_main_background_1.png');
-  width : 1334x;
-  height: 1200px;
+  background-size: cover;
+  height:100%;
 }
 
 </style>

@@ -29,10 +29,5 @@ export default {
 };
 </script>
 <style scoped="scss">
-.footer {
-  background-color: cornflowerblue;
-  position : absolute;
-  bottom : 0;
-}
 
 </style>
