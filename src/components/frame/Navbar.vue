@@ -3,29 +3,57 @@
       <div 
         class ="menu-title"
         @click="gotoMainPage()"
-        style="cursor: pointer;"
+        style="cursor: pointer; background-color: brown; margin: -39px 0px 0 90px;"
       >{{ title }}
       </div>
-      <v-layout class="px-3">
+      <v-layout class="px-3 py-5">
         <v-btn 
-          class="px-3 cols=3 "
+            color="secondary"
+            elevation="2"
+            text
+            x-large
+            class="px-5"
+            style="margin: 0 70px;"
             >{{ brandInfo }}
         </v-btn>
 
         <v-btn
-            @click="gotoStoreInfo()" 
+            color="secondary"
+            elevation="2"
+            text
+            x-large
+            @click="gotoStoreInfo()"
+            style="margin: 0 70px;" 
             >{{ storeInfo }}
         </v-btn>
         
         <v-btn 
+            color="secondary"
+            elevation="2"
+            text
+            x-large
+            class="px-5"
+            style="margin: 0 70px;"
             >{{ gallery }}
         </v-btn>
 
         <v-btn 
+            color="secondary"
+            elevation="2"
+            text
+            x-large
+            class="px-5"
+            style="margin: 0 50px;"
         >{{ customer }}
         </v-btn>
 
         <v-btn 
+            color="secondary"
+            elevation="2"
+            text
+            x-large
+            class="px-5"
+            style="margin: 0 50px;"
             >{{ information }}
         </v-btn>
         </v-layout>
@@ -61,6 +89,8 @@
 <style>
 @import url("@/assets/fonts/font.css");
 .menu-title{
+    background-image: url('@/assets/img/img_small_logo.png');
+    background-size: auto;
     width:300px;
     text-align: center;
     font-size: 35px;

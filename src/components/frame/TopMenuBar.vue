@@ -28,7 +28,6 @@ export default {
     }, 
     methods:{
       signUp() { 
-        console.log('sdlfjlsdjfl ==', this.$router);
         this.$router.push('about');
       }
     }
@@ -38,6 +37,6 @@ export default {
 <style scoped="scss">
 .topmenubar_title {
     text-align: right;
-    background-color: yellow;
+    background-color: brown;
 }
 </style>
