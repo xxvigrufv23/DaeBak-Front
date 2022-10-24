@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1 style="text-align: center;">This is an Sign-Up page</h1>
   </div>
 </template>
 
@@ -11,6 +11,7 @@
 <style scoped>
 .about{
   background-color: aqua;
-  height: 400px;
+  height: 100%;
+  width: 100%
 }
 </style>

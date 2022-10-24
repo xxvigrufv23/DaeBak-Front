@@ -8,4 +8,3 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
-createApp(App).use(라우터만든거).mount('#app')
