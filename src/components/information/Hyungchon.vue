@@ -1,5 +1,5 @@
 <template>
-<div>향촌점</div>
+<div></div>
 </template>
 
 <script>
@@ -8,7 +8,7 @@ export default {
     data(){
         return{
             hyungchoninformation : {
-                                    id : 0,
+                                    
                                     title: "향촌점",
                                     image: url('@/assets/img/향촌점.png'),
                                     number: "042-123-4567",

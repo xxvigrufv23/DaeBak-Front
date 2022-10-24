@@ -1,44 +1,23 @@
 <template>
   
   <nav>
-      <div class="storeinfoclass" @click="gotoHyungchonPage" style="cursor: pointer;" >향촌점</div>
-      <div class="storeinfoclass" @click="gotoMokryunPage" style="cursor: pointer;" >목련점</div>
-      <div class="storeinfoclass" @click="gotoDomaPage" style="cursor: pointer;" >도마점</div>
+      <div class="storeinfoclass" @click="gotoHyungchonPage" style="cursor: pointer;" >{{hyung}}</div>
+      <div class="storeinfoclass" @click="gotoMokryunPage" style="cursor: pointer;" >{{mok}}</div>
+      <div class="storeinfoclass" @click="gotoDomaPage" style="cursor: pointer;" >{{doma}}</div>
   </nav>
 </template>
 
  <script>
  export default {
     data(){
-        return{
-            
-            Storeinfomenu : [{
-                                    id : 0,
-                                    title: "향촌점",
-                                    image: url('@/assets/img/향촌점.png'),
-                                    number: "042-123-4567",
-                                    time: "07시~ 21시",
-                                    location: url('@/assets/img/향촌점 위치.png')
-                                },
-                                {
-                                    id : 1,
-                                    title: "목련점",
-                                    image: url('@/assets/img/목련점.png'),
-                                    number: "042-123-4567",
-                                    time: "07시~ 21시",
-                                    location: url('@/assets/img/목련점 위치.png')
-                                },
-                                {
-                                    id : 2,
-                                    title: "도마점",
-                                    image: url('@/assets/img/도미점.png'),
-                                    number: "042-123-4567",
-                                    time: "07시~ 21시",
-                                    location: url('@/assets/img/도미점 위치.png')
-                                }]
-           
-        }
+      return{
+        mok: '목련점',
+        doma: '도마점',
+        hyung:'향촌점',
+      }
     },
+  
+
     methods: {
       gotoDomapage() {
         this.$router.push('Doma');

@@ -8,7 +8,7 @@ export default {
     data(){
       return{
       mokryuninformation: {
-                                    id : 1,
+                                    
                                     title: "목련점",
                                     image: url('@/assets/img/목련점.png'),
                                     number: "042-123-4567",
