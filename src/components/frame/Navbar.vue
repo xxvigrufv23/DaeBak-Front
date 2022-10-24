@@ -12,7 +12,8 @@
             >{{ brandInfo }}
         </v-btn>
 
-        <v-btn 
+        <v-btn
+            @click="gotoStoreInfo" 
             >{{ storeInfo }}
         </v-btn>
         
@@ -47,7 +48,11 @@
       },
       methods: { 
         gotoMainPage() {
-            this.$router.push('mainpage');
+            this.$router.push('Mainpage');
+        },  
+        gotoStoreInfo() {
+            console.log("asdf");
+            this.$router.push('StoreInfo');
         }
       }
   }

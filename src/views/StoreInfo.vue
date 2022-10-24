@@ -1,35 +1,32 @@
 <template>
-  
   <nav>
-      <div class="storeinfoclass" @click="gotoHyungchonPage" style="cursor: pointer;" >{{hyung}}</div>
-      <div class="storeinfoclass" @click="gotoMokryunPage" style="cursor: pointer;" >{{mok}}</div>
-      <div class="storeinfoclass" @click="gotoDomaPage" style="cursor: pointer;" >{{doma}}</div>
+      <div class="storeinfoclass" @click="gotoHyangchonPage" style="cursor: pointer;" >{{ hyangchon }}</div>
+      <div class="storeinfoclass" @click="gotoMoglyeonPage" style="cursor: pointer;" >{{ moglyeon }}</div>
+      <div class="storeinfoclass" @click="gotoDomaPage" style="cursor: pointer;" >{{ doma }}</div>
   </nav>
 </template>
 
  <script>
  export default {
+    name: 'StoreInfo',
     data(){
       return{
-        mok: '목련점',
+        moglyeon: '목련점',
         doma: '도마점',
-        hyung:'향촌점',
+        hyangchon:'향촌점',
       }
     },
-  
-
     methods: {
       gotoDomapage() {
         this.$router.push('Doma');
       },
-       gotoHyungchonpage() {
+      gotoHyungchonpage() {
         this.$router.push('Hyungchon');
       },
       gotoMokryunpage() {
         this.$router.push('Mokryun');
       }
     }
-
 }
 
 

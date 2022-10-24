@@ -16,7 +16,7 @@ const routes = [
   {
     path:'/mainpage',
     component: MainPage,
-    name: 'mainpage',
+    name: 'Mainpage',
   },
   {
     path: '/about',
@@ -26,24 +26,25 @@ const routes = [
   {
     path: '/storeinfo',
     name: 'StoreInfo',
-    component: StoreInfo
-  },
-  {
-    path: '/doma',
-    name: 'Doma',
-    component: Doma
-  },
-  {
-    path: '/hyungchon',
-    name: 'Hyungchon',
-    component: Hyungchon
-  },
-  {
-    path: '/mokryun',
-    name: 'Mokryun',
-    component: Mokryun
-  },
-
+    component: StoreInfo,
+    children: [
+      {
+        path: "/doma",
+        name: "Doma",
+        component: Doma,
+      },
+      {
+        path: '/hyungchon',
+        name: 'Hyungchon',
+        component: Hyungchon
+      },
+      {
+        path: '/mokryun',
+        name: 'Mokryun',
+        component: Mokryun
+      },
+    ]
+  }
 ]
 
 export const router = new VueRouter({

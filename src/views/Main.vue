@@ -8,7 +8,7 @@
 export default {
   name: "MainPage",
   components: { 
-      Navbar: () => import('@/components/frame/Navbar.vue'),
+      // Navbar: () => import('@/components/frame/Navbar.vue'),
   }
 }
 </script>

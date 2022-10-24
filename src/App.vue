@@ -3,7 +3,7 @@
     <v-main>
       <TopMenuBar />
       <Navbar  style="background-color: brown;" />
-      <router-view/>
+        <router-view/>
       <Footer class="footer"/>
     </v-main>
   </v-app>
