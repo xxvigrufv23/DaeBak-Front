@@ -1,9 +1,9 @@
 <template>
-  <nav>
-      <div class="storeinfoclass" @click="gotoHyangchonPage" style="cursor: pointer;" >{{ hyangchon }}</div>
-      <div class="storeinfoclass" @click="gotoMoglyeonPage" style="cursor: pointer;" >{{ moglyeon }}</div>
-      <div class="storeinfoclass" @click="gotoDomaPage" style="cursor: pointer;" >{{ doma }}</div>
-  </nav>
+  <div>
+    <div class="storeinfoclass" @click="gotoHyangchonPage()" style="cursor: pointer;" >{{ hyangchon }}</div>
+    <div class="storeinfoclass" @click="gotoMoglyeonPage()" style="cursor: pointer;" >{{ moglyeon }}</div>
+    <div class="storeinfoclass" @click="gotoDomaPage()" style="cursor: pointer;" >{{ doma }}</div>
+  </div>
 </template>
 
  <script>
@@ -17,14 +17,14 @@
       }
     },
     methods: {
-      gotoDomapage() {
-        this.$router.push('Doma');
+      gotoDomaPage() {
+        this.$router.push('doma');
       },
-      gotoHyungchonpage() {
-        this.$router.push('Hyungchon');
+      gotoHyangchonPage() {
+        this.$router.push('hyungchon');
       },
-      gotoMokryunpage() {
-        this.$router.push('Mokryun');
+      gotoMoglyeonPage() {
+        this.$router.push('mokryun');
       }
     }
 }

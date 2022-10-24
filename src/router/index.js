@@ -27,24 +27,22 @@ const routes = [
     path: '/storeinfo',
     name: 'StoreInfo',
     component: StoreInfo,
-    children: [
-      {
-        path: "/doma",
-        name: "Doma",
-        component: Doma,
-      },
-      {
-        path: '/hyungchon',
-        name: 'Hyungchon',
-        component: Hyungchon
-      },
-      {
-        path: '/mokryun',
-        name: 'Mokryun',
-        component: Mokryun
-      },
-    ]
-  }
+  },
+  {
+    path: "/doma",
+    name: "Doma",
+    component: Doma,
+  },
+  {
+    path: '/hyungchon',
+    name: 'Hyungchon',
+    component: Hyungchon
+  },
+  {
+    path: '/mokryun',
+    name: 'Mokryun',
+    component: Mokryun
+  },
 ]
 
 export const router = new VueRouter({

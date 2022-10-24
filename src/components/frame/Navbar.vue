@@ -2,7 +2,7 @@
     <nav>
       <div 
         class ="menu-title"
-        @click="gotoMainPage"
+        @click="gotoMainPage()"
         style="cursor: pointer;"
       >{{ title }}
       </div>
@@ -13,7 +13,7 @@
         </v-btn>
 
         <v-btn
-            @click="gotoStoreInfo" 
+            @click="gotoStoreInfo()" 
             >{{ storeInfo }}
         </v-btn>
         
@@ -48,11 +48,11 @@
       },
       methods: { 
         gotoMainPage() {
-            this.$router.push('Mainpage');
+            this.$router.push('mainpage')
         },  
         gotoStoreInfo() {
             console.log("asdf");
-            this.$router.push('StoreInfo');
+            this.$router.push('storeInfo');
         }
       }
   }
