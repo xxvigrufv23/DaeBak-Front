@@ -33,6 +33,7 @@
             text
             x-large
             class="px-5"
+            @click="gotoGallery()"
             style="margin: 0 70px;"
             >{{ gallery }}
         </v-btn>
@@ -81,6 +82,10 @@
         gotoStoreInfo() {
             console.log("asdf");
             this.$router.push('storeInfo');
+        },
+        gotoGallery() {
+            console.log("asdf");
+            this.$router.push('gallery');
         }
       }
   }

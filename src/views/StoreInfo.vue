@@ -1,9 +1,30 @@
 <template>
-  <div>
-    <div class="storeinfoclass" @click="gotoHyangchonPage()" style="cursor: pointer;" >{{ hyangchon }}</div>
-    <div class="storeinfoclass" @click="gotoMoglyeonPage()" style="cursor: pointer;" >{{ moglyeon }}</div>
-    <div class="storeinfoclass" @click="gotoDomaPage()" style="cursor: pointer;" >{{ doma }}</div>
-  </div>
+<v-container  fluid>
+  
+    <v-row align ="center">
+      <v-col align ="center" >
+        <v-card  @click="gotoMoglyeonPage()" width="400" height="400px" class = "mt-10 pa-10 " align="center">
+          <h1 align = "center" class ="storeinfofont" >{{moglyeon}}</h1>
+          <v-img height="80%" width="100%" src="../assets/img/img_store_photo_1.png"></v-img>
+        </v-card>
+      </v-col>
+      <v-col >
+        <v-card @click="gotoDomaPage()" width="400" height="400px" class = "mt-10 pa-10">
+          <h1 align = "center" class ="storeinfofont">{{doma}}</h1>
+          <v-img height="80%" weight="100%" src="../assets/img/img_store_photo_2.png" ></v-img>
+        </v-card>
+      </v-col>
+      <v-col class="ml-5">
+        <v-card @click="gotoHyangchonPage()" width="400" height="400px" class = "mt-10 pa-10">
+          <h1 align = "center" class ="storeinfofont">{{hyangchon}}</h1>
+          <v-img  height="80%" weight="100%" src="../assets/img/img_store_photo_3.png"></v-img>
+        </v-card>
+      </v-col>
+      </v-row>
+  
+
+  
+</v-container>
 </template>
 
  <script>
@@ -32,31 +53,9 @@
 
 </script>
 
-<style>
-.storeinfoclass{
-    font-family: 'ulsanjunggu';
-    color:black;
-    padding:0px 180px;
-    position:relative;
-    text-align:center;
-    border-bottom: 3px solid transparent;
-    display: flex;
-    transition: 0.4s;
-    margin-top: 100px;
-    font-size : 50px;
-}
-body {
-  margin : 0;
-}
-div {
-  box-sizing: border-box;
-}
-.close{
-  margin-right:50px;
-}
-.location-size{
-  width: 100%;
-  margin-top:40px;
-
+<style >
+@import url("@/assets/fonts/font.css");
+.storeinfofont{
+  font-family: 'ulsanjunggu';
 }
 </style>
