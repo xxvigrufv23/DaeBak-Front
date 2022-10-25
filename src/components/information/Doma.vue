@@ -38,9 +38,6 @@ export default {
     background-position: right;
     background-color: blue;
 }
-.doma-img{
-    width:10%;
-    height:10%;
-}
+
 
 </style>

@@ -8,7 +8,7 @@
 
  <script>
  export default {
-    name: 'StoreInfo',
+    name: 'Storeinfo',
     data(){
       return{
         moglyeon: '목련점',
