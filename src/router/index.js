@@ -6,6 +6,10 @@ import StoreInfo from '../views/StoreInfo.vue'
 import Doma from '../components/information/Doma.vue'
 import Mokryun from'../components/information/Mokryun.vue'
 import Hyungchon from '../components/information/Hyungchon.vue'
+import Gallery from '../views/Gallery.vue'
+import Gallery1 from '../components/GalleryInformation/Gallery1.vue'
+import Gallery2 from '../components/GalleryInformation/Gallery2.vue'
+import Gallery3 from '../components/GalleryInformation/Gallery3.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -27,6 +31,26 @@ const routes = [
     path: '/storeinfo',
     name: 'StoreInfo',
     component: StoreInfo,
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: Gallery,
+  },
+  {
+    path: '/gallery1',
+    name: 'Gallery1',
+    component: Gallery1,
+  },
+  {
+    path: '/gallery2',
+    name: 'Gallery2',
+    component: Gallery2,
+  },
+  {
+    path: '/gallery3',
+    name: 'Gallery3',
+    component: Gallery3,
   },
   {
     path: "/doma",

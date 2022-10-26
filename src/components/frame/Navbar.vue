@@ -120,7 +120,7 @@ nav .menu-item{
 }
 nav .menu-item.active,
 nav .menu-item:hover{
-    background-color: orange;
+    background-color: rgb(216, 142, 13);
     border-bottom-color:rgb(255, 225, 0);
 }
 nav .menu-item a{
