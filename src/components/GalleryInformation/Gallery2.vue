@@ -27,12 +27,36 @@
             </v-btn>
         </v-col>
     </v-row>
+      <v-carousel height="500px" :show-arrows="false">
+        <v-carousel-item
+          v-for="(item,i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade-transition"
+          transition="fade-transition"
+        ></v-carousel-item>
+      </v-carousel>
     </v-footer>
  </v-container>
 </template>
 
 <script>
 export default {
+    data () {
+      return {
+        items: [
+          {
+            src: require('../../assets/img/sagolgallery1.png')
+          },
+          {
+            src: require('../../assets/img/sagolgallery2.png')
+          },
+          {
+            src:require('../../assets/img/sagolgallery3.png')
+          },
+        ],
+      }
+    }, 
 
     methods: {
       gotoGalleryPage() {
