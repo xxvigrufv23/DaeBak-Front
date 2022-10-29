@@ -10,6 +10,7 @@ import Gallery from '../views/Gallery.vue'
 import Gallery1 from '../components/GalleryInformation/Gallery1.vue'
 import Gallery2 from '../components/GalleryInformation/Gallery2.vue'
 import Gallery3 from '../components/GalleryInformation/Gallery3.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -67,6 +68,7 @@ const routes = [
     name: 'Mokryun',
     component: Mokryun
   },
+
 ]
 
 export const router = new VueRouter({
