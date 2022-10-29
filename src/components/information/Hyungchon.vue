@@ -43,7 +43,9 @@
   </v-row>
 <v-row>
   <v-col>
-    <h1>대박정육점-향촌점</h1><br>
+    <h1>대박정육점-향촌점 <v-btn elevation="2" height="50px" class="mb-2"> 
+          <p class="text-h5 mt-3">위치 찾기</p>      
+        </v-btn></h1><br>
       <div style="float: left; width: 5%;">
             <v-icon>mdi-clock</v-icon>
     </div>
