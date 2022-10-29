@@ -27,6 +27,12 @@
             </v-btn>
         </v-col>
     </v-row>
+    <v-row>
+      <v-col align="center">
+        <h3 class="fontco">100% 한우사골, 합리적인 가격!!</h3>
+        <p class="text-h5">100% 한우사골로 8시간씩 3번 정성을 담아 끓인 한우곰탕입니다.</p>
+      </v-col>
+    </v-row>
       <v-carousel height="500px" :show-arrows="false">
         <v-carousel-item
           v-for="(item,i) in items"
