@@ -32,8 +32,7 @@
             class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal text-h5 black--text"
             style="height: 100%;"
           >
-            대전광역시 서구 동서대로973번길 31 <br>
-            지번:대전광역시 서구 내동 163-3
+             <p class="mt-10 pt-10">대박정육점 목련점 상세위치<br><br>대전광역시 서구 동서대로973번길 31 <br><br> 지번:대전광역시 서구 내동 163-3 <br><br> 안골 어린이공원에서 3분 거리</p>
           </div>
         </v-expand-transition>
       </v-img>
