@@ -13,7 +13,7 @@
             text
             x-large
             class="px-5"
-            style="margin: 0 70px;"
+            style="margin: 0 70px; background-color:white;"
             >{{ brandInfo }}
         </v-btn>
 
@@ -23,7 +23,7 @@
             text
             x-large
             @click="gotoStoreInfo()"
-            style="margin: 0 70px;" 
+            style="margin: 0 70px; background-color:white;" 
             >{{ storeInfo }}
         </v-btn>
         
@@ -34,7 +34,7 @@
             x-large
             class="px-5"
             @click="gotoGallery()"
-            style="margin: 0 70px;"
+            style="margin: 0 70px; background-color:white;"
             >{{ gallery }}
         </v-btn>
 
@@ -44,7 +44,7 @@
             text
             x-large
             class="px-5"
-            style="margin: 0 50px;"
+            style="margin: 0 50px; background-color:white;"
         >{{ customer }}
         </v-btn>
 
@@ -54,7 +54,7 @@
             text
             x-large
             class="px-5"
-            style="margin: 0 50px;"
+            style="margin: 0 50px; background-color:white;"
             >{{ information }}
         </v-btn>
         </v-layout>
