@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import MainPage from '../views/Main.vue'
 import AboutView from '../views/AboutView.vue'
 import StoreInfo from '../views/StoreInfo.vue'
+import Customer from '../views/Customer.vue'
 import Doma from '../components/information/Doma.vue'
 import Mokryun from'../components/information/Mokryun.vue'
 import Hyungchon from '../components/information/Hyungchon.vue'
@@ -67,6 +68,11 @@ const routes = [
     path: '/mokryun',
     name: 'Mokryun',
     component: Mokryun
+  },
+  {
+    path: '/customer',
+    name: 'Customer',
+    component: Customer
   },
 
 ]

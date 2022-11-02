@@ -44,6 +44,7 @@
             text
             x-large
             class="px-5"
+            @click="gotoCustomer()"
             style="margin: 0 50px; background-color:white;"
         >{{ customer }}
         </v-btn>
@@ -86,6 +87,10 @@
         gotoGallery() {
             console.log("asdf");
             this.$router.push('gallery');
+        },
+        gotoCustomer() {
+            console.log("asdf");
+            this.$router.push('customer');
         }
       }
   }
