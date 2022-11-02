@@ -50,7 +50,7 @@
                 <v-row>
             <hr class="one">    
             <v-col cols="2">
-                <h4>문의유형</h4>
+                <h4>답변 알림 서비스</h4>
             </v-col >
             <v-col cols="2" class="mb-2" >
                 <v-checkbox
