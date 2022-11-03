@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <v-main>
-      <TopMenuBar />
-      <Navbar  style="background-color: brown;" />
-        <router-view/>
+      <v-row style="background-color: black;  position: fixed; top: 0; width: 100%; left: 0; right: 0;" >
+        <TopMenuBar />
+        <Navbar />
+      </v-row>
+      <router-view/>
       <Footer class="footer"/>
     </v-main>
   </v-app>

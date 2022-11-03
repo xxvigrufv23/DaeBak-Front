@@ -37,6 +37,6 @@ export default {
 <style scoped="scss">
 .topmenubar_title {
     text-align: right;
-    background-color: brown;
+    background-color: black;
 }
 </style>

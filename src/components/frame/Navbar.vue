@@ -3,59 +3,59 @@
       <div 
         class ="menu-title"
         @click="gotoMainPage()"
-        style="cursor: pointer; background-color: brown; margin: -39px 0px 0 90px;"
+        style="cursor: pointer; background-color: black; margin: -39px 0px 0 90px; color: white;"
       >{{ title }}
       </div>
       <v-layout class="px-3 py-5">
         <v-btn 
-            color="secondary"
+            color="white"
             elevation="2"
             text
             x-large
             class="px-5"
-            style="margin: 0 70px; background-color:white;"
+            style="margin: 0 70px;"
             >{{ brandInfo }}
         </v-btn>
 
         <v-btn
-            color="secondary"
+            color="white"
             elevation="2"
             text
             x-large
             @click="gotoStoreInfo()"
-            style="margin: 0 70px; background-color:white;" 
+            style="margin: 0 70px;" 
             >{{ storeInfo }}
         </v-btn>
         
         <v-btn 
-            color="secondary"
+            color="white"
             elevation="2"
             text
             x-large
             class="px-5"
             @click="gotoGallery()"
-            style="margin: 0 70px; background-color:white;"
+            style="margin: 0 70px;"
             >{{ gallery }}
         </v-btn>
 
         <v-btn 
-            color="secondary"
+            color="white"
             elevation="2"
             text
             x-large
             class="px-5"
             @click="gotoCustomer()"
-            style="margin: 0 50px; background-color:white;"
+            style="margin: 0 50px;"
         >{{ customer }}
         </v-btn>
 
         <v-btn 
-            color="secondary"
+            color="white"
             elevation="2"
             text
             x-large
             class="px-5"
-            style="margin: 0 50px; background-color:white;"
+            style="margin: 0 50px;"
             >{{ information }}
         </v-btn>
         </v-layout>
@@ -81,15 +81,12 @@
             this.$router.push('mainpage')
         },  
         gotoStoreInfo() {
-            console.log("asdf");
             this.$router.push('storeInfo');
         },
         gotoGallery() {
-            console.log("asdf");
             this.$router.push('gallery');
         },
         gotoCustomer() {
-            console.log("asdf");
             this.$router.push('customer');
         }
       }
@@ -125,7 +122,7 @@ nav .menu-item{
 }
 nav .menu-item.active,
 nav .menu-item:hover{
-    background-color: rgb(216, 142, 13);
+    background-color: rgb(87, 70, 40);
     border-bottom-color:rgb(255, 225, 0);
 }
 nav .menu-item a{
