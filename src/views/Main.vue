@@ -2,6 +2,8 @@
   <div style="height: 100%;">
     <div class="background_img"></div>
   </div>
+  
+
 </template>
 
 <script>
